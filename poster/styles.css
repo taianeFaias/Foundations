@@ -1,0 +1,134 @@
+/*#poster-size{
+    background-color: aqua;
+    width: 500px;
+    height: 680px;
+}*/
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(192, 192, 192);
+    font-family: "Inter" sans-serif;
+}
+
+
+#poster-size {
+    background: url("thom.png");
+    width: 500px;
+    height: 680px;
+    background-size: 500px;
+    position: relative;
+}
+
+img{
+    display: flex;
+    position: absolute;
+    width: 500px;
+    height: 680px;
+    z-index: 1;
+}
+
+
+#header {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#main-h1 {
+    color: #8BEF73;
+    font-family: Inter, sans-serif;
+    font-size: 56.26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 8.439px;
+    position: absolute;
+    top: -30px;
+
+}
+
+
+
+#europe-p {
+
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: darkgray;
+    position: absolute;
+    top: 70px;
+    font-family: "Inter", sans-serif;
+
+}
+
+
+#bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.city {
+    text-align: center;
+
+}
+
+
+.city-name {
+    font-family: Play, sans-serif;
+    font-size: 57px;
+    font-weight: 700;
+    color: rgb(152, 211, 138);
+    margin-top: 0;
+    margin-bottom: 0;
+    background: linear-gradient(95deg, #FFF 22.53%, #98D38A 139.7%);
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -4px;
+
+}
+
+.city-name#stockholm{
+    background: linear-gradient(94deg, #98D38A -74.55%, #FFF 101.43%);
+    background-clip: text;
+    color: transparent;
+}
+
+
+.data {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #98D38A;
+    margin-bottom: 20px;
+    font-family: Inter, sans-serif;
+}
+
+
+.data p {
+    margin: 0;
+}
+
+#liveNation{
+    color: #A6A6A6;
+    font-family: Inter;
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: -6px;
+    font-style: normal;
+    letter-spacing: 0.98px;
+}
+
