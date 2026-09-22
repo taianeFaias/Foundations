@@ -1,0 +1,69 @@
+
+
+#card-size{
+    width: 220px;
+    height: 320px;
+    background-color: #FFD3ED;
+    border: solid 16px #FFA8EC;
+    border-radius: 30px;
+}
+
+#cat1-container{
+    background: linear-gradient(180deg, #FFF0F0 0%, #FFC4C4 100%);
+    border: solid 3px #BB00B8;
+    display: flex;
+    justify-content: center;
+    margin:10px;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+#cat1{
+    width: 160px;
+}
+
+.paw-svg{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+h4{
+    margin-top: 12px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#paw-icons-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.paw-icon{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.paw-icon-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+
+p{
+   font-size: 17px;
+   margin: 6px;
+   font-weight: 100px;
+
+}
+
+.number{
+    margin-right: 12px;
+}
+
