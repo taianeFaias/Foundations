@@ -1,20 +1,46 @@
-body{
-    background-color: #ffe6e6;
+html{
+    font-size: clamp(14px, 2vw, 16px);
+    font-family: 'Montserrat', sans-serif;
+
 }
 
+body{
+    background-color: #ffe6e6;
+    width: 100%;
+    background-image: url(/Cats/background.png);
+}
+
+h4{
+    margin-top: 16px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #f304ef;
+    
+}
+
+p{
+    font-size: clamp(14px, 2vw, 16px);
+    margin: 6px;
+
+}
 
 #layout{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    max-width: 1400px
-
-
+    gap: 60px;
+    padding: 10px;
+    
 }
 
 #title{
     font-size: clamp(2rem, 4vw, 3.5rem);
     text-align: center;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
 
 .card-size{
@@ -24,8 +50,8 @@ body{
     border: solid 2px #FFA8EC;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgb(182, 182, 182);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
 }
 
 
@@ -34,7 +60,7 @@ body{
     border: solid 1px #BB00B8;
     display: grid;
     justify-content: center;
-    margin:10px;
+    margin: 10px;
     margin-top: -2px;
     padding: 10px;
     border-radius: 6px;
@@ -43,8 +69,7 @@ body{
 
 }
 
-
-@media (max-width: 1600px){
+@media (max-width: 1000px){
     #layout{
         display: flex;
         flex-wrap: wrap
@@ -53,7 +78,7 @@ body{
 }
 
 #cat1{
-    width: 160px;
+    width: 116px;
 }
 
 #cat2{
@@ -86,14 +111,6 @@ body{
     margin-left: 10px;
 }
 
-h4{
-    margin-top: 16px;
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-
 .paw-icons-container{
     display: flex;
     flex-direction: column;
@@ -112,12 +129,6 @@ h4{
     justify-content: space-between;
     width: 100%;
    
-}
-
-p{
-    font-size: clamp(14px, 2vw, 16px);
-    margin: 6px;
-
 }
 
 .number{
