@@ -1,50 +1,68 @@
+
+
 html{
     font-size: clamp(14px, 2vw, 16px);
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
 
 }
 
 body{
     background-color: #ffe6e6;
-    width: 100%;
     background-image: url(/Cats/background.png);
 }
 
 h4{
-    margin-top: 16px;
-    font-size: 1.1rem;
+    margin-top: 12px;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 12px;
-    color: #f304ef;
-    
+    color: #BB00B8;
+
 }
 
 p{
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(12px, 2vw, 14px);
     margin: 6px;
+    color: #BB00B8;
 
+}
+
+#stats-svg{
+    width: 20px;
+}
+
+.stats-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #layout{
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 3em;
     padding: 10px;
     
 }
 
 #title{
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(2rem, 3vw, 3.5rem);
     text-align: center;
     margin-bottom: -10px;
     margin-top: -10px;
+    color: #BB00B8;
 }
 
+
 .card-size{
-    width: clamp(180px, 40vw, 220px);
+    width: clamp(208px, 40vw, 220px);
     height: 308px;
     background-color: #FFD3ED;
     border: solid 2px #FFA8EC;
@@ -69,13 +87,21 @@ p{
 
 }
 
-@media (max-width: 1000px){
-    #layout{
-        display: flex;
-        flex-wrap: wrap
+@media (min-width: 1001px) {
+    .span-2 {
+        grid-column: span 2;
+        width: 100%; 
     }
-
 }
+    
+@media (max-width: 1000px) {
+    #layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
 #cat1{
     width: 116px;
@@ -104,9 +130,27 @@ p{
     width: 115px;
 }
 
+#cat7{
+    width: 114px;
+
+}
+
+#cat8{
+    width: 115px;
+}
+
+#cat9{
+    width: 114px;
+}
+
+#cat10{
+    width: 114px;
+}
+
+
 
 .paw-svg{
-    width: clamp(28px, 4vw, 32px);
+    width: clamp(22px, 4vw, 28px);
     height: 32px;
     margin-left: 10px;
 }
@@ -133,5 +177,7 @@ p{
 
 .number{
     margin-right: 12px;
+    font-weight: 480;
+    color: #b400b1;
 }
 
