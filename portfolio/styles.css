@@ -1,0 +1,114 @@
+body{
+    background: #050043;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*@media (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+}*/
+
+#navigation-bar{
+
+    width: 100%;
+
+}
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FECDE0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    align-items: center;
+    
+}
+
+#menu-section{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#menu-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+#home-taiane{
+    padding-left: 20px;
+}
+
+#menu li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: clamp(12px, 1.8vh, 14px);
+    letter-spacing: 0.2rem;
+}
+
+/* HERO SECTION */
+
+#hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80dvh;
+
+}
+
+#hero-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+
+}
+
+#hero-paragraph{
+    width: 300px;
+    color: aliceblue;
+}
+
+#hero-text-image{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#hero-h1{
+    color: rgb(194, 227, 255);
+    font-size: 3.7rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+#hero-buttons{
+    display: flex;
+    justify-content: left;
+
+}
+
+#hero-buttons button{
+    padding: 8px;
+    padding-left: 36px;
+    padding-right: 36px;
+    
+}
