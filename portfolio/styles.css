@@ -3,19 +3,14 @@ body{
     overflow-y: hidden;
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
+    background-image: url(images/elements1.png);
+    background-size: 100%;
+   
+    
 }
 
-/*@media (max-width: 1000px) {
-    body {
-        display: flex;
-        flex-wrap: wrap;
 
-    }
-
-}*/
-
-#navigation-bar{
-
+#nav-bar{
     width: 100%;
 
 }
@@ -24,7 +19,7 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #FECDE0;
+    background-color:rgb(194, 227, 255);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -35,7 +30,7 @@ body{
     right: 0;
     height: 50px;
     align-items: center;
-    
+  
 }
 
 #menu-section{
@@ -52,6 +47,13 @@ body{
     list-style-type: none;
 }
 
+#hamburguer-buttom{
+    display: none;
+    width: 25px;
+    margin-right: 20px;
+
+}
+
 #home-taiane{
     padding-left: 20px;
 }
@@ -59,9 +61,17 @@ body{
 #menu li a{
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 550;
-    font-size: clamp(12px, 1.8vh, 14px);
-    letter-spacing: 0.2rem;
+    font-weight: 680;
+    font-size: clamp(11px, 1.8vh, 12px);
+    letter-spacing: 0.18rem;
+}
+
+#menu p a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 680;
+    font-size: clamp(11px, 1.8vh, 12px);
+    letter-spacing: 0.18rem;
 }
 
 /* HERO SECTION */
@@ -83,8 +93,14 @@ body{
 }
 
 #hero-paragraph{
-    width: 300px;
-    color: aliceblue;
+    max-width: 300px;
+    margin-left: 15px;
+    font-size: 12px;
+    color: rgb(198, 198, 198);
+    line-height: 2;
+    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+
 }
 
 #hero-text-image{
@@ -103,6 +119,7 @@ body{
 #hero-buttons{
     display: flex;
     justify-content: left;
+    margin-top: 20px;
 
 }
 
@@ -110,5 +127,36 @@ body{
     padding: 8px;
     padding-left: 36px;
     padding-right: 36px;
+    background-color: rgb(194, 227, 255);
+    border-style: none;
+    border-radius: 6px;
+    color: #050043;
+    font-weight: 550;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 20px;
     
+}
+
+#bottom p {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+@media (max-width: 700px) {
+
+
+    #hamburguer-buttom{
+        display: block;
+        justify-content: center;
+    }
+
+    #menu-section{
+        display: none;
+    }
+
+    #menu-icons{
+        display: none;
+    }
+
 }
