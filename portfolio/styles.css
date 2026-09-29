@@ -1,5 +1,13 @@
+:root {
+    --primary-bg-color: #050043;
+    --primary-color: rgb(194, 227, 255);
+    --secondary-color: #FECDE0;
+    --paragraph-light: rgb(241, 241, 241);
+  }
+
+
 body{
-    background: #050043;
+    background-color: var(--primary-bg-color);
     overflow-y: hidden;
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
@@ -11,14 +19,13 @@ body{
 
 #nav-bar{
     width: 100%;
-
 }
 
 #menu{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color:rgb(194, 227, 255);
+    background-color: var(--primary-color);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -86,8 +93,7 @@ body{
 
 #hero-pic{
     width: 200px;
-    height: 200px;
-    border-radius: 500px;
+    height: 230px;
 
 }
 
@@ -208,4 +214,73 @@ body{
    
     }
 
+}
+
+
+/*PROJECT PAGE*/
+
+#card-cointainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+ 
+}   
+
+#projects{
+    color: var(--paragraph-light);
+    position: fixed;
+    bottom: 0;
+    font-size: 20px;
+    margin-left: 0px;
+    font-family: Montserrat;
+
+}
+
+#card-1{
+    grid-column: span 2;
+    height: 258px;
+    background-color: aliceblue;
+}
+
+#card-2{
+    width: 258px;
+    height: 258px;
+    background-color: aliceblue;
+}
+
+#card-3{
+    grid-column: span 2;
+    height: 258px;
+    background-color: aliceblue;
+ 
+}
+
+#card-4{
+    width: 258px;
+    height: 258px;
+    background-color: aliceblue;
+}
+
+#card-5{
+    grid-column: span 2;
+    height: 258px;
+    background-color: aliceblue;
+ 
+}
+
+#card-6{
+    width: 258px;
+    height: 258px;
+    background-color: aliceblue;
+}
+
+#card-7{
+    width: 258px;
+    height: 258px;
+    background-color: aliceblue;
 }
