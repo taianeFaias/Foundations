@@ -3,11 +3,13 @@
     --primary-color: rgb(194, 227, 255);
     --secondary-color: #FECDE0;
     --paragraph-light: rgb(241, 241, 241);
-    --link-color: 
+    --paragraph-dark: #050043;
+    --link-color: #FECDE0;
     --in-page-menu:
     --
   }
 
+/*MAIN PAGE*/
 
 body{
     background-color: var(--primary-bg-color);
@@ -16,8 +18,6 @@ body{
     font-family: "Montserrat", sans-serif;
     background-image: url(images/elements1.png);
     background-size: 100%;
-
-
 }
 
 
@@ -97,8 +97,7 @@ body{
 
 #hero-pic{
     width: 200px;
-    height: 230px;
-
+    
 }
 
 #hero-paragraph{
@@ -145,80 +144,50 @@ body{
     margin-top: 20px;
     
 }
-
-#bottom p {
-    font-size: 12px;
-    color: aliceblue;
-    text-transform: uppercase;
-    border: solid;
-    border-color: aqua;
-    padding: 15px;
-    border-radius: 100px;
-}
-
-#bottom{
+/*
+#skills-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
+    margin: 40px;
+    margin-top: -130px;
     
 }
 
-@media (max-width: 700px) {
-
-
-    #hamburguer-buttom{
-        display: block;
-        justify-content: center;
-    }
-
-    #menu-section{
-        display: none;
-    }
-
-    #menu-icons{
-        display: none;
-    }
-
-    #hero-h1{
-        font-size: clamp(2.8rem, 2vh, 6rem);
-        letter-spacing: 4px;
-        margin-bottom: 30px;
-        margin-top: 80px;
-    }
-
-    #hero-pic{
-        width: 180px;
-        height: 180px;
-        border-radius: 400px;
+#skills-container p {
+    font-size: 12px;
+    color: var(--paragraph-dark);
     
-    }
-
-    #hero-text-image{
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    #hero-paragraph{
-        max-width: clamp(320px, 2vh, 400px);
-        justify-content: center;
-        font-size: 12px;
-        color: rgb(198, 198, 198);
-        line-height: 2;
-        letter-spacing: 2px;
-        letter-spacing: 1.5px;
-    }
-
-    #hero-buttons{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        margin-left: -20px;
-   
-    }
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px
 
 }
+
+#skills-card1{
+    width: 180px;
+    height: 180px;
+    background-image: url(images/postit/Dots-3.png);
+    background-size: 100%;
+
+}
+
+#skills-card2{
+    width: 180px;
+    height: 180px;
+
+    background-image: url(images/postit/Paper-2.png);
+    background-size: 100%;
+}
+
+#skills-card3{
+    width: 180px;
+    height: 180px;
+    background-image: url(images/postit/Paper\ Fibers-1.png);
+    background-size: 100%;
+}
+*/
+
 
 
 /*PROJECT PAGE*/
@@ -379,4 +348,208 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/*CONTACT PAGE*/
+
+
+#contact-container{
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 760px;
+
+}
+
+.form-text{
+    color: var(--paragraph-light);
+}
+
+#form-name{
+    width: 450px;
+    margin-top: 11px;
+    margin-bottom: 24px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+#form-email{
+    width: 450px;
+    margin-top: 11px;
+    margin-bottom: 24px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+#form-message{
+    width: 450px;
+    padding: 12px;
+    height: 170px;
+    margin-top: 11px;
+    border: none;
+    border-radius: 6px;
+}
+
+#text-container{
+    color: var(--paragraph-light);
+    width: 300px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -220px;
+}
+
+#button-contact{
+    background-color: rgb(194, 227, 255);
+    border-style: none;
+    border-radius: 6px;
+    color: #050043;
+    font-weight: 550;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 712px) {
+
+
+    #hamburguer-buttom{
+        display: block;
+        justify-content: center;
+    }
+
+    #menu-section{
+        display: none;
+    }
+
+    #menu-icons{
+        display: none;
+    }
+
+    #hero-h1{
+        font-size: clamp(2.8rem, 2vh, 6rem);
+        letter-spacing: 4px;
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+
+    #hero-pic{
+        width: 180px;
+        height: 180px;
+        border-radius: 400px;
+    
+    }
+
+    #hero-text-image{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #hero-paragraph{
+        max-width: clamp(320px, 2vh, 400px);
+        justify-content: center;
+        font-size: 12px;
+        color: rgb(198, 198, 198);
+        line-height: 2;
+        letter-spacing: 2px;
+        letter-spacing: 1.5px;
+    }
+
+    #hero-buttons{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: -20px;
+   
+    }
+
+    /* CONTACT PAGE*/
+
+    #contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+      
+    
+    }
+
+    .form-text{
+        font-size: clamp(16px ,1vh, 18px);
+    }
+
+    #form-name{
+        display: flex;
+        flex-direction: column;
+        max-width: clamp(300px, 2vh, 400px);
+        margin-bottom: 11px
+        
+    }
+
+    #form-email{
+        display: flex;
+        flex-direction: column;
+        max-width: clamp(300px, 2vh, 400px);
+    }
+    #form-message{
+        display: flex;
+        flex-direction: column;
+        max-width: clamp(300px, 2vh, 400px);
+    
+        
+    }
+
+    #text-container{
+        width: 330px;
+        font-size: clamp(16px ,1vh, 18px);
+        line-height: 30px;
+        margin-top: 50px;
+
+    }
+
+    #body-contact{
+        overflow-y: scroll;
+    }
+
+    #button-contact{
+        background-color: rgb(194, 227, 255);
+        border-style: none;
+        border-radius: 6px;
+        color: #050043;
+        font-weight: 550;
+        font-size: 12px;
+        margin-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 30px;
+        display: block;
+        margin-left: auto;
+        
+    
+    }
+    
+
+
 }
