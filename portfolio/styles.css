@@ -166,6 +166,7 @@ body{
 }   
 
 #card-1{
+    position: relative;
     grid-column: span 2;
     height: 280px;
     background-image: url(/images/lklklk.png);
@@ -173,7 +174,7 @@ body{
 }
 
 #card-2{
-   
+    position: relative;
     height: 280px;
     background-color: aliceblue;
     background-image: url(/images/iPhone\ 15\ Pro.png);
@@ -184,7 +185,7 @@ body{
 }
 
 #card-3{
-    
+    position: relative;
     height: 280px;
     background-color: aliceblue;
     background-image: url(/images/sumupp.png);
@@ -194,7 +195,7 @@ body{
 }
 
 #card-4{
-   
+    position: relative;
     height: 280px;
     background-color: aliceblue;
     background-image: url(/images/Photos/food\ 4.jpg);
@@ -204,7 +205,7 @@ body{
 
 
 #card-6{
-   
+    position: relative;
     height: 280px;
     background-image: url(/images/Photos/girl.jpg);
     background-size: 258px;
@@ -215,7 +216,7 @@ body{
 }
 
 #card-7{
-   
+    position: relative;
     height: 280px;
     background-color: aliceblue;
     background-image: url(/images/Photos/street.jpg);
@@ -226,19 +227,36 @@ body{
 }
 
 #card-8{
-    
+    position: relative;
     height: 280px;
-    background-image: url(/images/Photos/girl.jpg);
+    background-image: url(images/Photos/nature.jpg);
     background-color: aliceblue;
     background-size: 152%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
+
 }
 
 #card-container a{
     text-decoration: none;
     color: var(--secondary-color);
     
+}
+
+.project-text-label{
+    position: absolute;
+    bottom: -20px;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsla(0, 0%, 3%, 0.5);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
 
 }
 
@@ -366,6 +384,35 @@ body{
 
 }
 
+
+
+
+.body-photos{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#smoke{
+    position: left;
+}
+#photos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px; 
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#photos-grid img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 8px;
+
+}
 
 
 
