@@ -91,7 +91,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80dvh;
+    min-height: 90dvh;
 
 }
 
@@ -114,14 +114,20 @@ body{
 #hero-text-image{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 #hero-h1{
     color: rgb(194, 227, 255);
-    font-size: 3.7rem;
+    font-size: 4rem;
     letter-spacing: 5px;
     margin-bottom: 20px;
+}
+
+#hero-pic-mobile{
+    width: 180px;
+    height: 180px;
+    display: none;
 }
 
 #hero-buttons{
@@ -385,16 +391,11 @@ body{
 }
 
 
-
-
 .body-photos{
     overflow-x: scroll;
     overflow-y: scroll;
 }
 
-#smoke{
-    position: left;
-}
 #photos-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -443,10 +444,14 @@ body{
     }
 
     #hero-pic{
+        display: none;
+        
+    }
+
+    #hero-pic-mobile{
+        display: grid;
         width: 180px;
         height: 180px;
-        border-radius: 400px;
-    
     }
 
     #hero-text-image{
